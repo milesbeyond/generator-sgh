@@ -1,0 +1,20 @@
+{
+    "require": {
+        "php": ">=5.4.0"
+    },
+    "engines": {
+	    "php": "5.5.5",
+	    "nginx": "1.4.3"
+	},
+    "extra": {
+        "heroku": {
+            "document-root": "dist",
+            "index-document": "index.html",
+            "nginx-includes": ["config/heroku/nginx.conf"],
+            "php-config": [
+                "display_errors=off",
+                "session.gc_maxlifetime=172800"
+            ]
+        }
+    }
+}
