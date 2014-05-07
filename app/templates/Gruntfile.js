@@ -53,6 +53,23 @@ module.exports = function(grunt) {
           'dist/index.html': ['app/index.html']
         }
       }
+    },
+    copy: {
+      dist: {
+        files: [{
+          expand: true,
+          dot: true,
+          cwd: 'app',
+          dest: 'dist',
+          src: [
+            '*.{ico,png,txt}',
+            '.htaccess',
+            'images/*',
+            'css/main.css',
+            'js/*'
+          ]
+        }]
+      }
     }
   });
 
@@ -62,7 +79,7 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-uglify');
   grunt.loadNpmTasks('grunt-bower-task');
   grunt.loadNpmTasks('grunt-processhtml');
-
+  grunt.loadNpmTasks('grunt-contrib-copy');
   // Default grunt task when running "grunt"
   grunt.registerTask('default', [
     'uglify',
@@ -73,6 +90,7 @@ module.exports = function(grunt) {
   grunt.registerTask('build', [
     'uglify',
     'compass',
+    'copy:dist',
     'processhtml:dist',
   ]);
   // Compass task run "grunt styles"

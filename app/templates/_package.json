@@ -11,6 +11,7 @@
     "grunt-contrib-uglify": "*",
     "grunt-contrib-requirejs": "~0.4.1",
     "grunt-bower-task": "~0.3.4",
-    "grunt-processhtml": "*"
+    "grunt-processhtml": "*",
+    "grunt-contrib-copy": "*"
   }
 }
