@@ -1,6 +1,6 @@
 # generator-sgh [![Build Status](https://secure.travis-ci.org/cheeks/generator-sgh.png?branch=master)](https://travis-ci.org/cheeks/generator-sgh)
 
-A [Yeoman](http://yeoman.io) generator for building pages on sunglasshut.com, a very tricky situation.
+>A [Yeoman](http://yeoman.io) generator for building pages on sunglasshut.com, which can be a very tricky situation. Includes a Grunt task for compiling a handoff.
 
 ## Installing
 Let's assume you have [npm](https://npmjs.org) installed. If not, head over to [nodejs.com](nodejs.com) and get set up.
