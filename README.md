@@ -25,16 +25,11 @@ $ yo sgh
 You will do all of your work in `/app`
 
 ## Tasks
-###Watch
-While working, let Grunt watch run compass and uglify.
-```
-grunt
-```
-###Build
+###```grunt```
+Watch task. Runs compass, uglify.
+###```grunt build```
 When it's time to make a build to hand off to the client. This strips out parts of index.html, processes scss & js, and moves all relevant files into `/dist`.
-```
-grunt build
-```
+
 
 ## License
 

@@ -55,7 +55,8 @@ var SghGenerator = yeoman.generators.Base.extend({
     this.directory('images', 'app/images');
     this.directory('config', 'config');
     this.directory('css', 'app/css');
-  },
+    this.directory('js', 'app/js');
+},
 
   projectfiles: function () {
     this.copy('editorconfig', '.editorconfig');
